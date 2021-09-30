@@ -11,4 +11,4 @@ const evenOdd = (arr) => {
   console.log(`Even numbers are: ${even}`);
   console.log(`Odd numbers are: ${odd}`);
 };
-evenOdd([1, 2, 3, 4, 5]);
+evenOdd([1, 2, 3, 4, 5, 7]);
