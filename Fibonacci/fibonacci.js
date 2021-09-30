@@ -1,5 +1,7 @@
 const fibonacci = () => {
-  let n = prompt("Enter the number of fibonacci sequence you want to print");
+  let n = parseInt(
+    prompt("Enter the number of fibonacci sequence you want to print")
+  );
   if (n < 1) return alert("Enter value greater than 1");
   let n1 = 0,
     n2 = 1,
