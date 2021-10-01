@@ -1,4 +1,5 @@
 const uber = (arr) => {
+  let l = arr.length;
   let arr2 = [];
   let product = 1;
   let count = 0;
@@ -13,7 +14,7 @@ const uber = (arr) => {
     product = product * arr[i];
   }
   // if there are more than two zeroes the output array will all be zeros;
-  if (count > 1) return arr2.fill(0);
+  if (count > 1) return new Array(l).fill(0);
 
   arr.forEach((e) => {
     zero == true
@@ -24,5 +25,5 @@ const uber = (arr) => {
   });
   return arr2;
 };
-console.log(uber([1, 2, 3, 4, 0]));
+console.log(uber([1, 2, 3, 4, 0, 0]));
 console.log(uber([1, 2, 3, 4, 5]));
